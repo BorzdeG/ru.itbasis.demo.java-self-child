@@ -1,14 +1,14 @@
 package ru.itbasis.demo.java.self.child;
 
-public abstract class BaseClass implements IChildParam {
+public abstract class BaseClass<T extends BaseClass> implements IChildParam<T> {
     private int baseParam;
 
     public int getBaseParam() {
         return baseParam;
     }
 
-    public BaseClass setBaseParam(int i) {
+    public T setBaseParam(int i) {
         this.baseParam = i;
-        return this;
+        return (T) this;
     }
 }

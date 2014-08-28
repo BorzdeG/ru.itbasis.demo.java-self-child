@@ -1,6 +1,6 @@
 package ru.itbasis.demo.java.self.child;
 
-public class ChildClass extends BaseClass  {
+public class ChildClass extends BaseClass<ChildClass>  {
     private int childParam;
 
     public int getChildParam() {

@@ -12,12 +12,12 @@ public class ClassTest {
     @DataProvider(name = "data")
     public static Object[][] data() {
 
-        final ChildClass item0 = (ChildClass) new ChildClass().setBaseParam(BASE_PARAM);
+        final ChildClass item0 = new ChildClass().setBaseParam(BASE_PARAM);
         item0.setChildParam(CHILD_PARAM);
 
-        final ChildClass item1 = (ChildClass) new ChildClass().setChildParam(CHILD_PARAM).setBaseParam(BASE_PARAM);
+        final ChildClass item1 = new ChildClass().setChildParam(CHILD_PARAM).setBaseParam(BASE_PARAM);
 
-        final ChildClass item2 = ((ChildClass) new ChildClass().setBaseParam(BASE_PARAM)).setChildParam(CHILD_PARAM);
+        final ChildClass item2 = new ChildClass().setBaseParam(BASE_PARAM).setChildParam(CHILD_PARAM);
 
         return new Object[][]{{item0}, {item1}, {item2}};
     }
