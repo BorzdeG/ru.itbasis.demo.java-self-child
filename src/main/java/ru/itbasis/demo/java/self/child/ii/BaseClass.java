@@ -1,4 +1,4 @@
-package ru.itbasis.demo.java.self.child;
+package ru.itbasis.demo.java.self.child.ii;
 
 public abstract class BaseClass<T extends BaseClass> implements IChildParam<T> {
     private int baseParam;

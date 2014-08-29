@@ -1,4 +1,4 @@
-package ru.itbasis.demo.java.self.child;
+package ru.itbasis.demo.java.self.child.ii;
 
 public interface IChildParam<T> {
     int getBaseParam();
