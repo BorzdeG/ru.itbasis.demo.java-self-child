@@ -1,6 +1,6 @@
 package ru.itbasis.demo.java.self.child.woi;
 
-public abstract class BaseClass<T extends BaseClass> {
+public abstract class BaseClass<T extends BaseClass<T>> {
     private int baseParam;
 
     public int getBaseParam() {
